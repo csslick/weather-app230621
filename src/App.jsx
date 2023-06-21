@@ -11,7 +11,7 @@ function App() {
   const [error, setError] = useState(false); // 에러 상태 true | false
   // console.log(API_KEY);
 
-  // test
+  // test...
   const someDo = (data) => {
     console.log('someDo: ', data)
   }
