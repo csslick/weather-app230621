@@ -4,9 +4,12 @@ import Search from './components/Search';
 import Weather from './components/Weather';
 
 function App() {
+  // API 키를 환경변수로 불러오기
+  const API_KEY = import.meta.env.VITE_API_KEY;
   const [location, setLocation] = useState(''); // 검색어
   const [weather, setWeather] = useState(null); // 날씨 데이터 null 값이 비었음을 명시적 선언
   const [error, setError] = useState(false); // 에러 상태 true | false
+  // console.log(API_KEY);
 
   const someDo = (data) => {
     console.log('someDo: ', data)
@@ -15,7 +18,7 @@ function App() {
   // 날씨 요청 함수
   const fetchWeather = () => {
     
-    const apiKey = '5e3dd9073954b1f47758e6b5849178d4';
+    const apiKey = API_KEY;
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&lang=kr`;
 
     // AJAX 요청
