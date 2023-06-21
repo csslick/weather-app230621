@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+input {
+  padding: 4px 8px;
+  font-size: 20px;;
+}
+
+button {
+  padding: 4px 1rem;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+}
